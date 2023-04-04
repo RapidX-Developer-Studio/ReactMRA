@@ -62,10 +62,8 @@ spec:
       action: run:yeoman
       input:
         namespace: react-webpack:component
-        options:
-          name: ${{ parameters.name }}
-        args:
-          name: "Rapidx"
+      args:
+        name: ${{ parameters.name }}
 
     - id: publish
       if: ${{ parameters.dryRun !== true }}
