@@ -63,7 +63,7 @@ spec:
       input:
         namespace: org:generator-swdp-react
         options:
-          codeowners: '@${{ parameters.owner }}'
+          generator-swdp-react: '@${{ parameters.owner }}'
 
     - id: publish
       if: ${{ parameters.dryRun !== true }}
