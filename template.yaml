@@ -14,7 +14,7 @@ spec:
         - name
         - owner
       properties:
-        name: yeoman
+        name: generator-name
           title: Name
           type: string
           description: Unique name of the component
