@@ -62,7 +62,6 @@ spec:
       action: run:yeoman
       input:
         namespace: react-webpack:component
-      ---
       args:
         - name: sameer
 
@@ -74,7 +73,7 @@ spec:
         allowedHosts:
           - github.com
         description: This is ${{ parameters.name }}
-        repoUrl: ${{ parameters.repoUrl }}
+        repoUrl: '/output/react'
 
     - id: register
       if: ${{ parameters.dryRun !== true }}
