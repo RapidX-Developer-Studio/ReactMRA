@@ -63,7 +63,7 @@ spec:
       input:
         namespace: react-webpack:component
         options:
-          codeowners: '@${{ parameters.owner }}'
+          name: 'rapidx-dev'
 
     - id: publish
       if: ${{ parameters.dryRun !== true }}
