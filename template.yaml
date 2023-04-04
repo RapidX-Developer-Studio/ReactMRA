@@ -61,9 +61,9 @@ spec:
       name: Yeoman
       action: run:yeoman
       input:
-        namespace: swdp-react
+        namespace: org:codeowners
         options:
-          swdp-react: '@${{ parameters.owner }}'
+          codeowners: '@${{ parameters.owner }}'
 
     - id: publish
       if: ${{ parameters.dryRun !== true }}
