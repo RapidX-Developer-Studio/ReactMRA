@@ -14,7 +14,7 @@ spec:
         - name
         - owner
       properties:
-        name: MyGenerator
+        name: swdp-react
           title: Name
           type: string
           description: Unique name of the component
