@@ -63,7 +63,7 @@ spec:
       input:
         namespace: react-webpack:component
       args:
-        name: ${{ parameters.name }}
+        - name: ${{ parameters.name }}
 
     - id: publish
       if: ${{ parameters.dryRun !== true }}
