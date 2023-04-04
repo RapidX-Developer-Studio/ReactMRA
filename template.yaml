@@ -63,7 +63,7 @@ spec:
       input:
         namespace: react-webpack:component
         options:
-          name: 'rapidx-dev'
+          name: ${{ parameters.name }}
 
     - id: publish
       if: ${{ parameters.dryRun !== true }}
