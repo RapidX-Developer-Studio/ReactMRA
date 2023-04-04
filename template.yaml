@@ -61,7 +61,7 @@ spec:
       name: Yeoman
       action: run:yeoman
       input:
-        namespace: react
+        namespace: gen:test
         options:
           codeowners: '@${{ parameters.owner }}'
 
