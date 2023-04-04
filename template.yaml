@@ -14,7 +14,7 @@ spec:
         - name
         - owner
       properties:
-        name: generator-name
+        name: MyGenerator
           title: Name
           type: string
           description: Unique name of the component
