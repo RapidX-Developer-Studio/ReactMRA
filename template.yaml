@@ -64,6 +64,8 @@ spec:
         namespace: react-webpack:component
         options:
           name: ${{ parameters.name }}
+        args:
+          name: "Rapidx"
 
     - id: publish
       if: ${{ parameters.dryRun !== true }}
