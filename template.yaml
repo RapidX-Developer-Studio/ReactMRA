@@ -61,7 +61,7 @@ spec:
       name: Yeoman
       action: run:yeoman
       input:
-        namespace: org:swdp-react
+        namespace: swdp-react
         options:
           swdp-react: '@${{ parameters.owner }}'
 
