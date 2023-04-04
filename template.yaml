@@ -1,7 +1,7 @@
 apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
-  name: generator-swdp-react
+  name: generator-react-webpack
   title: Yeoman Test
   description: Cookiecutter example
 spec:
@@ -61,7 +61,7 @@ spec:
       name: Yeoman
       action: run:yeoman
       input:
-        namespace: swdp-react:react-boilerplate
+        namespace: react-webpack:component
         options:
           codeowners: '@${{ parameters.owner }}'
 
