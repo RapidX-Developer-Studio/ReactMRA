@@ -61,7 +61,7 @@ spec:
       name: Yeoman
       action: run:yeoman
       input:
-        namespace: generator-swdp
+        namespace: org:codeowners
         options:
           codeowners: '@${{ parameters.owner }}'
 
