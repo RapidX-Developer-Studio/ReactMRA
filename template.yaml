@@ -1,7 +1,7 @@
 apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
-  name: generator-react-webpack
+  name: yeoman-demo
   title: Yeoman Test
   description: Cookiecutter example
 spec:
@@ -14,7 +14,7 @@ spec:
         - name
         - owner
       properties:
-        name: 
+        name:
           title: Name
           type: string
           description: Unique name of the component
@@ -62,8 +62,13 @@ spec:
       action: run:yeoman
       input:
         namespace: react-webpack:component
-      args:
-        name: "working"
+        args:
+           name: 
+            - repoo     
+            - test
+            - ask
+          
+            
 
     - id: publish
       if: ${{ parameters.dryRun !== true }}
@@ -73,7 +78,7 @@ spec:
         allowedHosts:
           - github.com
         description: This is ${{ parameters.name }}
-        repoUrl: '/output/react'
+        repoUrl: ${{ parameters.repoUrl }}
 
     - id: register
       if: ${{ parameters.dryRun !== true }}
